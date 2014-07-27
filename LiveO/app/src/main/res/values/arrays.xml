@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_menu_items">
+        <item>Solicitudes</item>
+        <item>Ingresada</item>
+        <item>Pendiente</item>
+        <item>Digitacion</item>
+        <item>Verificada</item>
+        <item>Calificada</item>
+        <item>Cobranzas</item>
+        <item>Gestion de Cobro</item>
+        <item>Actividades</item>
+        <item>Agenda</item>
+        <item>Geolocalizacion</item>
+        <item>Mapas</item>
+        <item>Rutas</item>
+    </string-array>       
+</resources>

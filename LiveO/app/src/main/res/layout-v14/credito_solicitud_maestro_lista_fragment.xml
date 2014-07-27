@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@android:style/Widget.DeviceDefault.Light.ListView.DropDown">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/solicitudMaestroListView"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@layout/solicitud_maestro_lista_item"
+        android:dividerHeight="1dp" />
+</LinearLayout>

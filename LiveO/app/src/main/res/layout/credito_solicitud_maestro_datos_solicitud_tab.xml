@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DATOS SOLICITUD"
+                android:id="@+id/datosBasicosTextView"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/fillcolor"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="100001"
+                android:id="@+id/nombreDelClienteTextView"
+                android:layout_below="@+id/numeroClienteTextView"
+                android:layout_alignLeft="@+id/numeroClienteTextView"
+                android:layout_alignStart="@+id/numeroClienteTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="USUARIO"
+                android:id="@+id/textView7"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_below="@+id/nombreDelClienteTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Diego Armanto Tobar Ibarra"
+                android:id="@+id/textView8"
+                android:layout_below="@+id/textView7"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FECHA DE INGRESO"
+                android:id="@+id/textView11"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="10-Junio-2014"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView11"
+                android:layout_alignLeft="@+id/textView11"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Estado"
+                android:id="@+id/textView13"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_below="@+id/textView12"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=": : : : : : : : : :"
+                android:id="@+id/textView14"
+                android:layout_below="@+id/textView13"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Asesor"
+                android:id="@+id/textView15"
+                android:layout_below="@+id/textView14"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/numeroClienteTextView"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:text="NUMERO SOLICITUD"
+                android:layout_below="@+id/datosBasicosTextView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerAsesores"
+                android:layout_below="@+id/textView15"
+                android:layout_alignLeft="@+id/textView15"
+                android:layout_alignStart="@+id/textView15"
+                android:layout_alignRight="@+id/textView15"
+                android:layout_alignEnd="@+id/textView15"
+                android:spinnerMode="dropdown"
+                style="@android:style/Widget.Spinner.DropDown" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

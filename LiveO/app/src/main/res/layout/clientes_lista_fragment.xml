@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/solicitudMaestroListView"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@layout/clientes_lista_item"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/list_selector" />
+</LinearLayout>

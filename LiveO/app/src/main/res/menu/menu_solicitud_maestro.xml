@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+
+    <item
+        android:id="@+id/menu_update"
+        android:icon="@drawable/ic_action_navigation_drawer"
+        android:title="Orden de Pago"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/menu_orden_pago"
+                android:icon="@drawable/ic_orden_pago"
+                android:title="Orden de Pago"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/menu_data_credito"
+                android:icon="@drawable/ic_datacredito"
+                android:title="Datacredito"
+                app:showAsAction="ifRoom"/>
+        </menu>
+
+    </item>
+
+</menu>

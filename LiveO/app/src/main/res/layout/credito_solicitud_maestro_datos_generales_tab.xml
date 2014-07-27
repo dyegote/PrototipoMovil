@@ -1,0 +1,342 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <RelativeLayout
+            android:id="@+id/aaa11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DATOS GENERALES"
+                android:id="@+id/datosBasicosTextView"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/fillcolor"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Diego Armando Tobar Ibarra"
+                android:id="@+id/nombreDelClienteTextView"
+                android:layout_alignLeft="@+id/numeroClienteTextView"
+                android:layout_alignStart="@+id/numeroClienteTextView"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toLeftOf="@+id/button2"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/button2"
+                android:editable="true"
+                android:enabled="true"
+                android:background="@drawable/fillcolor1"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TIPO PRODUCTO"
+                android:id="@+id/textView13"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_below="@+id/nombreDelClienteTextView"
+                android:layout_alignRight="@+id/numeroClienteTextView"
+                android:layout_alignEnd="@+id/numeroClienteTextView"
+                android:layout_alignLeft="@+id/numeroClienteTextView"
+                android:layout_alignStart="@+id/numeroClienteTextView"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/numeroClienteTextView"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:text="CLIENTE"
+                android:layout_below="@+id/datosBasicosTextView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_below="@+id/numeroClienteTextView"
+                android:layout_alignRight="@+id/textView13"
+                android:layout_alignEnd="@+id/textView13"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_nuevo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                style="@android:style/Widget.ImageButton"
+                android:onClick="OnClickNuevoCliente" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:layout_below="@+id/numeroClienteTextView"
+                android:layout_toLeftOf="@+id/button"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_buscar"
+                style="@android:style/Widget.ImageButton"
+                android:onClick="OnClickBuscarCliente" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTipoProducto"
+                android:layout_below="@+id/textView13"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:layout_alignRight="@+id/textView13"
+                android:layout_alignEnd="@+id/textView13"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DESTINO CREDITO"
+                android:id="@+id/tipoIdentificacionTextView"
+                android:layout_below="@+id/spinnerTipoProducto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerDestinoCredito"
+                android:layout_below="@+id/tipoIdentificacionTextView"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:layout_alignLeft="@+id/tipoIdentificacionTextView"
+                android:layout_alignStart="@+id/tipoIdentificacionTextView"
+                android:layout_alignRight="@+id/tipoIdentificacionTextView"
+                android:layout_alignEnd="@+id/tipoIdentificacionTextView" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="NOMBRE COMERCIAL"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/spinnerDestinoCredito"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerNombreComercial"
+                android:layout_below="@+id/textView4"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_alignEnd="@+id/textView4" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="MONTO"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/spinnerNombreComercial"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Solicitado:"
+                android:id="@+id/textView7"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical|right"
+                android:layout_alignBottom="@+id/editTextMontoSolicitado"
+                android:layout_alignTop="@+id/editTextMontoSolicitado" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextMontoSolicitado"
+                android:layout_below="@+id/textView5"
+                android:layout_alignRight="@+id/textView5"
+                android:layout_alignEnd="@+id/textView5"
+                android:text="1.500.000"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Aprobado:"
+                android:id="@+id/textView8"
+                android:gravity="center_vertical|right"
+                android:layout_below="@+id/textView7"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7"
+                android:layout_alignBottom="@+id/editTextMontoAprobado"
+                android:singleLine="false" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextMontoAprobado"
+                android:text="1.500.000"
+                android:layout_below="@+id/editTextMontoSolicitado"
+                android:layout_alignLeft="@+id/editTextMontoSolicitado"
+                android:layout_alignStart="@+id/editTextMontoSolicitado"
+                android:layout_alignRight="@+id/editTextMontoSolicitado"
+                android:layout_alignEnd="@+id/editTextMontoSolicitado"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DATOS TABLA DE PAGOS"
+                android:id="@+id/textView9"
+                android:background="@drawable/fillcolor"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TIPO TABLA DE PAGOS"
+                android:id="@+id/textViewTipoTablaPagos"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTipoTablaPagos"
+                android:layout_alignLeft="@+id/textViewTipoTablaPagos"
+                android:layout_alignStart="@+id/textViewTipoTablaPagos"
+                android:layout_below="@+id/textViewTipoTablaPagos"
+                android:layout_alignRight="@+id/editTextMontoAprobado"
+                android:layout_alignEnd="@+id/editTextMontoAprobado"
+                style="@android:style/Widget.Spinner.DropDown"
+                />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="NÚMERO DE CUOTAS"
+                android:id="@+id/textViewNumeroDeCuotas"
+                android:layout_below="@+id/spinnerTipoTablaPagos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextNumeroDeCutoas"
+                android:text="12"
+                android:layout_below="@+id/textViewNumeroDeCuotas"
+                android:layout_alignLeft="@+id/textViewNumeroDeCuotas"
+                android:layout_alignStart="@+id/textViewNumeroDeCuotas"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FRECUENCIA DE PAGO"
+                android:id="@+id/textView10"
+                android:layout_below="@+id/editTextNumeroDeCutoas"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerFrecuenciaPago"
+                android:layout_below="@+id/textView10"
+                android:layout_alignLeft="@+id/spinnerNombreComercial"
+                android:layout_alignStart="@+id/spinnerNombreComercial"
+                android:layout_alignRight="@+id/spinnerNombreComercial"
+                android:layout_alignEnd="@+id/spinnerNombreComercial"
+                style="@android:style/Widget.Spinner.DropDown"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

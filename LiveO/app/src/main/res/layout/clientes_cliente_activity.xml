@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <RelativeLayout
+            android:id="@+id/aaa11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DATOS BÁSICOS"
+                android:id="@+id/datosBasicosTextView"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/fillcolor"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Cedula"
+                android:id="@+id/nombreDelClienteTextView"
+                android:gravity="center_vertical"
+                android:editable="true"
+                android:enabled="true"
+                android:background="@drawable/fillcolor1"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_below="@+id/datosBasicosTextView"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Identificación"
+                android:id="@+id/textView18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_toLeftOf="@+id/nombreDelClienteTextView"
+                android:singleLine="true"
+                android:background="@drawable/fillcolor_label"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Tipo Identificación"
+                android:id="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/fillcolor_label"
+                android:padding="10dp"
+                android:layout_below="@+id/datosBasicosTextView"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="10859872536"
+                android:id="@+id/textView19"
+                android:gravity="center_vertical"
+                android:editable="true"
+                android:enabled="true"
+                android:background="@drawable/fillcolor1"
+                android:padding="10dp"
+                android:layout_below="@+id/nombreDelClienteTextView"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Primer Apellido"
+                android:id="@+id/textView20"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18"
+                android:layout_below="@+id/textView18"
+                android:layout_toLeftOf="@+id/textView19"
+                android:background="@drawable/fillcolor_label"
+                android:padding="10dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Tobar"
+                android:id="@+id/textView22"
+                android:gravity="center_vertical"
+                android:editable="true"
+                android:enabled="true"
+                android:background="@drawable/fillcolor2"
+                android:padding="10dp"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_alignTop="@+id/textView20"
+                android:layout_alignRight="@+id/textView19"
+                android:layout_alignEnd="@+id/textView19" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
